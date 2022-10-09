@@ -1,0 +1,119 @@
+*{
+    --primary-color: #d67818;
+    --secondary-color: #44c4a1;
+    --text-color: #111111;
+    --grey-1: #e0e5eb;
+    --grey-2: #f2f2f2;
+    --grey-3:#333333;
+    --border-color: #c0c0c0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+}
+
+main{
+    min-height: 80vh;
+}
+
+.TopBar{
+    background-color: #fff;
+    height: 75px;
+    line-height: 75px;
+    border: solid 1px var(--border-color);
+    border-bottom: solid 1px var(--border-color);
+}
+
+.Container{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+.isFloatLeft{
+    float: left;
+}
+
+.isFloatRight{
+    float: right;
+}
+
+.TopBar-burger{
+    margin-right: 10px;
+}
+
+.TopBar-logo img{
+    vertical-align: middle;
+}
+
+.TopBar-form input{
+    height: 37px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.MainFooter{
+    background-color: var(--grey-3);
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.MainFooter p{
+    max-width: 417px;
+    margin: 0 auto;
+}
+
+.MainFooter p:last-child{
+    margin-top: 70px;
+}
+
+.section-1{
+    height: 100vh;
+}
+
+.TitrePrincipal{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.SousTitrePrincipal{
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 7px 0 0;
+    line-height: 1.2;
+    font-size: 1.875rem;
+}
+
+.HeroAside svg {
+    height: 120px;
+}
+
+.TextFrame{
+    background-color: var(--primary-color);
+    height: 70vh;
+    width: 40%;
+    height: 100%;
+}
+
+.TextFrame p{
+    text-align: justify;
+    color: var(--grey-2);
+}
+
+.HeroAside{
+    height: 70vh;
+}
+.HeroBackground{
+    background-image: url(/img/montageBackground.jpg);
+    background-size: cover;
+    width: 100%;
+}
