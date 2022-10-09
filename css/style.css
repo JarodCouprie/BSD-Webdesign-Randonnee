@@ -16,12 +16,16 @@ body{
     margin: 0;
     font-size: 14px;
     font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-main{
-    min-height: 80vh;
-}
 
+/*--------------------------------------TopBar--------------------------------------*/
+header{
+    display: flex;
+    flex-direction: column;
+}
 .TopBar{
     background-color: #fff;
     height: 75px;
@@ -57,7 +61,7 @@ main{
     padding: 0 10px;
     font-size: 16px;
 }
-
+/*--------------------------------------Footer--------------------------------------*/
 .MainFooter{
     background-color: var(--grey-3);
     color: #fff;
@@ -74,10 +78,31 @@ main{
     margin-top: 70px;
 }
 
+/*--------------------------------------Main--------------------------------------*/
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------------Section-1--------------------------------------*/
+
 .section-1{
     height: 100vh;
+    display: flex;
+    flex: 1;
 }
-
+/*--------------------------------------Aside Hero--------------------------------------*/
+.HeroAside{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.ImgSVG {
+    background-color: var(--text-color);
+    color: var(--grey-2);
+    height: 50px;
+}
 .TitrePrincipal{
     font-size: 3rem;
     font-weight: 700;
@@ -92,28 +117,39 @@ main{
     line-height: 1.2;
     font-size: 1.875rem;
 }
-
-.HeroAside svg {
-    height: 120px;
+.SocialMedias{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 60vh;
 }
 
+/*--------------------------------------Main Hero--------------------------------------*/
+.HeroMain{
+    background-image: url(/img/montageBackground.jpg);
+    background-size: cover;
+    display: flex;
+    flex: 5;
+}
 .TextFrame{
     background-color: var(--primary-color);
-    height: 70vh;
-    width: 40%;
-    height: 100%;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .TextFrame p{
     text-align: justify;
+    display: flex;
     color: var(--grey-2);
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
 }
 
-.HeroAside{
-    height: 70vh;
-}
-.HeroBackground{
-    background-image: url(/img/montageBackground.jpg);
-    background-size: cover;
-    width: 100%;
+/*--------------------------------------Section-2--------------------------------------*/
+
+.section-2{
+    height: 100vh;
 }
