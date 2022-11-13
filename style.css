@@ -5,6 +5,7 @@
     --grey-1: #e0e5eb;
     --grey-2: #f2f2f2;
     --grey-3:#333333;
+    --grey-4: #999999;
     --border-color: #c0c0c0;
     box-sizing: border-box;
     text-decoration: none;
@@ -163,7 +164,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 500px;
+    border-radius: 50%;
 }
 
 .firstElements{
@@ -177,11 +178,16 @@ main{
 
 .article-1{
     width: 320px;
-    height: 220px;
+    height: 260px;
     padding: 20px;
     background-color: var(--grey-1);
     text-align: justify;
     color: var(--grey-3);
+}
+
+.article-1 h2{
+    font-size: 1.875rem;
+    font-weight: 700;
 }
 .article-2{
     width: 360px;
@@ -197,22 +203,24 @@ main{
 
 .frameArticle-2{
     width: 320px;
-    height: 220px;
+    height: 260px;
     padding: 20px;
     background-color: var(--primary-color);
-    margin: 0px 20px 5px 0px;
+    margin: 0px 20px 0px 0px;
     text-align: justify;
 }
 
 .frameArticle-2 h2{
     color: var(--grey-1);
+    font-size: 1.875rem;
+    font-weight: 700;
 }
 .frameArticle-2 p{
     color: var(--grey-1);
 }
 
 .article-3{
-    color: var(--border-color);
+    color: var(--grey-4);
     width: 360px;
     height: 70vh;
     display: flex;
@@ -226,9 +234,6 @@ main{
 
 .section-3{
     height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 80px;
 }
 
@@ -253,14 +258,12 @@ main{
 }
 
 .section-3 .isFloatLeft{
-    width: 33.3%;
-    padding: 1em;
     background-color: var(--grey-2);
     margin: 1em;
 }
 
 .profileCard img {
-    border-radius: 500px;
+    border-radius: 50%;
 }
 
 .profileCard .titre{
@@ -270,12 +273,155 @@ main{
     letter-spacing: 3px;
 }
 
-.midBar{
+/*.midBar{
     width: 100%;
     height: 195px;
     background-color: var(--primary-color);
-    position: absolute;
+    position: relative;
     z-index: -1;
-    top: 1950px;
+}
+*/
+
+/*--------------------------------------Section-4--------------------------------------*/
+
+.section-4{
+    margin-top: 100px;
 }
 
+.section-4 a{
+    text-decoration: underline;
+    color:#555c66;
+}
+
+.section-4 a:hover{
+    text-decoration: none;
+}
+.section-4 h2{
+    font-weight: 700;
+    font-size: 3.75rem;
+    color: var(--primary-color);
+}
+
+.section-4-img{
+    height: 350px;
+    width: 350px;
+}
+
+.section-4-img-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-4-text-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+.section-4-left-container{
+    width: 50%;
+    padding-right: 20px;
+    
+}
+
+.section-4-right-container{
+    letter-spacing: 2px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555c66;
+    width: 50%;
+}
+
+.LearnMoreButton{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: var(--primary-color);
+    background-color: white;
+    border: solid 2px var(--primary-color);
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.LearnMoreButton:hover{
+    color: var(--grey-1);
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
+/*--------------------------------------Section-5--------------------------------------*/
+
+.section-5{
+    height: 75vh;
+    background-image: linear-gradient(0deg, rgba(214,120,24,0.45), rgba(214,120,24,0.45)),
+    url(/img/moutains.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.section-5 p:last-child{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+.section-5 a{
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+.LearnMoreButtonWhite{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: white;
+    background-color: rgb(0, 0, 0,0);
+    border: solid 2px white;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.LearnMoreButtonWhite:hover{
+    color: var(--primary-color);
+    background-color: white;
+    cursor: pointer;
+}
+
+.section-5 h2{
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.topicCardContainer{
+    color: white;
+    display: flex;
+    gap: 2rem;
+}
+
+.topicCardContainer h4{
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+.topicCardContainer p{
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.topicCard{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
