@@ -250,7 +250,7 @@ main{
 
 .teamCards{
     display: flex;
-    flex-direction: row;
+    align-items: center;
 }
 
 .section-3 .isFloatLeft{
@@ -270,9 +270,10 @@ main{
 }
 
 .midBar{
-    width: 100%;
+    width: 100vw;
     height: 195px;
     background-color: var(--primary-color);
+    position: absolute;
     z-index: -1;
 }
 
@@ -413,6 +414,7 @@ main{
     font-weight: 400;
     line-height: 1.6;
     font-size: 1rem;
+    font-style: italic;
 }
 
 .topicCard{
@@ -427,8 +429,15 @@ main{
 /*--------------------------------------Section-6--------------------------------------*/
 
 .section-6{
-    padding-right: 550px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-6-container{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
 }
 
 .section-6-img{
@@ -440,8 +449,35 @@ main{
     padding: 50px;
 }
 
-.card-section-6-container{
-    padding: 50px;
-    width: 300px;
-    height: 300px;
+.section-6-card-container{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #ffffff;
+    flex: 1;
+    padding: 30px;
+    display: grid;
+    place-items: center;
 }
+.section-6 button{
+    align-items: center;
+}
+
+.section-6 h2{
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+.section-6 p{
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.mid-bar-section-6{
+    width: 50vw;
+    height: 195px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -1;
+    align-self: flex-start;
+}
+
