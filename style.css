@@ -21,25 +21,6 @@ body{
     flex-direction: column;
 }
 
-
-/*--------------------------------------TopBar--------------------------------------*/
-header{
-    display: flex;
-    flex-direction: column;
-}
-.TopBar{
-    background-color: #fff;
-    height: 75px;
-    line-height: 75px;
-    border: solid 1px var(--border-color);
-    border-bottom: solid 1px var(--border-color);
-}
-
-.Container{
-    max-width: 1140px;
-    margin: 0px auto;
-}
-
 .isFloatLeft{
     float: left;
 }
@@ -48,15 +29,47 @@ header{
     float: right;
 }
 
-.TopBar-burger{
-    margin-right: 10px;
+.container{
+    max-width: 1199px;
+    margin: 0px auto;
 }
 
-.TopBar-logo img{
-    vertical-align: middle;
+/*--------------------------------------NavBar--------------------------------------*/
+header{
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: solid 1px var(--border-color);
+    z-index: 1;
 }
 
-.TopBar-form input{
+.navbar{
+    height: 75px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-burger{
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-form input{
     height: 37px;
     border: 1px solid #ccc;
     padding: 0 10px;
@@ -87,16 +100,18 @@ main{
 /*--------------------------------------Section-1--------------------------------------*/
 
 .section-1{
-    height: 50vh;
+    height: 70vh;
     display: flex;
-    flex: 1;
+    background-image: url(/img/montageBackground.jpg);
+    background-size: cover;
+    background-position: center;
 }
 /*--------------------------------------Aside Hero--------------------------------------*/
 .HeroAside{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     padding: 30px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
 }
 .HeroAside svg {
     height: auto;
@@ -114,33 +129,41 @@ main{
     line-height: 1.2;
     font-size: 1.875rem;
 }
-.SocialMedias{
+
+.hero-aside-bottom{
     display: flex;
     align-items: flex-end;
-    margin-top: 60vh;
+    padding: 20px 0px 20px 0px;
 }
 
 /*--------------------------------------Main Hero--------------------------------------*/
 .HeroMain{
-    background-image: url(/img/montageBackground.jpg);
-    background-size: cover;
     display: flex;
     flex: 5;
 }
+
 .TextFrame{
-    background-color: #d67718c4;
-    width: 40%;
+    background-color: var(--primary-color);
+    opacity: 80%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     left: 700px;
+    padding: 40px;
+}
+
+.TextFrame div {
+    background-color: white;
+    height: 6px;
+    width: 60px;
 }
 
 .TextFrame p{
     text-align: justify;
     color: var(--grey-2);
-    padding: 20px;
+    
     font-size: 1.5rem;
 }
 
@@ -259,10 +282,13 @@ main{
 }
 
 .profileCard img {
+    width: 240px;
+    height: auto;
     border-radius: 50%;
+    padding: 20px;
 }
 
-.profileCard .titre{
+.profileCard h4{
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1rem;
@@ -275,6 +301,13 @@ main{
     background-color: var(--primary-color);
     position: absolute;
     z-index: -1;
+}
+
+.profileCard p{
+    padding: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1rem;
 }
 
 /*--------------------------------------Section-4--------------------------------------*/
@@ -332,14 +365,14 @@ main{
     text-transform: uppercase;
     font-size: 0.875rem;
     color: var(--primary-color);
-    background-color: rgb(0, 0, 0, 0);
+    background: transparent;
     border: solid 2px var(--primary-color);
     text-align: center;
     padding: 10px 30px;
 }
 
 .LearnMoreButton:hover{
-    color: var(--grey-1);
+    color: white;
     background-color: var(--primary-color);
     cursor: pointer;
 }
@@ -377,7 +410,7 @@ main{
     text-transform: uppercase;
     font-size: 0.875rem;
     color: white;
-    background-color: rgb(0, 0, 0, 0);
+    background: transparent;
     border: solid 2px white;
     text-align: center;
     padding: 10px 30px;
@@ -431,18 +464,20 @@ main{
 .section-6{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    background-color: var(--grey-2);
+    z-index: -2;
 }
 
 .section-6-container{
-    border: 1px solid black;
     display: flex;
     align-items: center;
 }
 
 .section-6-img{
-    max-height: 708px;
-    width: auto;
+    height: 708px;
+    width: 550px;
+    background-image: contain;
 }
 
 .section-6-img-container{
@@ -451,19 +486,19 @@ main{
 
 .section-6-card-container{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 490px;
     background-color: #ffffff;
-    flex: 1;
-    padding: 30px;
-    display: grid;
-    place-items: center;
-}
-.section-6 button{
+    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .section-6 h2{
     font-size: 2.25rem;
     text-align: center;
+    margin: 0;
+    margin-top: 30px;
 }
 
 .section-6 p{
@@ -473,11 +508,47 @@ main{
 }
 
 .mid-bar-section-6{
-    width: 50vw;
+    width: 60vw;
     height: 195px;
     background-color: var(--primary-color);
     position: absolute;
     z-index: -1;
-    align-self: flex-start;
+}
+
+/*--------------------------------------Section-7--------------------------------------*/
+
+.section-7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*--------------------------------------Section-7--------------------------------------*/
+
+.section-8{
+    background-color: var(--primary-color);
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.section-8-container{
+    display: flex;
+}
+
+.section-8 form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.section-8 form button{
+    background-color: #111111;
+    color: white;
+    padding: 10px 30px;
+    border: none;
 }
 
