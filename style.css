@@ -518,12 +518,32 @@ main{
 /*--------------------------------------Section-7--------------------------------------*/
 
 .section-7{
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     justify-content: center;
 }
 
+.section-7-text{
+    display: grid;
+    place-items: center ;
+}
 
+.section-7-text h2{
+    font-size: 3.75rem;
+    margin: 0;
+    margin-top: 60px;
+}
+
+.section-7-text p{
+    width: 350px;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.section-7 img{
+    width: 294px;
+    height: 354px;
+}
 
 /*--------------------------------------Section-7--------------------------------------*/
 
@@ -552,3 +572,35 @@ main{
     border: none;
 }
 
+.section-8 h2{
+    color: white;
+}
+
+.section-8 p{
+    color: white;
+}
+
+
+.get-in-touch{
+    width: 320px;
+    text-align: left;
+}
+
+.section-8 .get-in-touch h2{
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.section-8 .get-in-touch p{
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.8;
+    font-style: italic;
+    text-align: left;
+}
+
+.section-8 .infos{
+    width: 210px;
+    height: 340px;
+    padding: 30px;
+}
